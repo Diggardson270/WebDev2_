@@ -1,0 +1,77 @@
+body{
+    background-color: rgb(41, 40, 40); 
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+    margin: 8rem; 
+}
+
+h1{ 
+    text-align: center;
+    color: white;
+}
+
+ul{ 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+form{ 
+    width:30rem;
+    height: 3rem auto;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+label{
+    font-weight: bolder; 
+    margin-bottom: 0.5rem;
+    display: block;
+}
+input, textarea, select{ 
+    width: 30rem;
+    display: block;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    font:inherit;
+    border: 1px solid rgb(184, 184, 184);
+}
+
+textarea{ 
+    resize: none;
+}
+
+input:focus{
+    background-color: rgb(80, 107, 255);
+    border-color: rgb(40, 2, 88);
+    color: black;
+}
+
+button{ 
+    display: block;
+    font: inherit;
+    background-color: rgb(40, 2, 88);
+    color: white;
+    border: 1px solid rgb(40, 2, 88);
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.5s ease-out;
+}
+
+button:hover{ 
+    background-color: rgb(61, 3, 133);
+    border-color: rgb(61, 3, 133);
+    transform: scale(1.03);
+}
+
+.form-control{ 
+    display: flex;
+}
+
+.form-control input{ 
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+

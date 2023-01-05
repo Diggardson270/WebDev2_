@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>WEBUIT</title>
+</head>
+<body>
+    
+
+    <!-- 
+        types of input
+        text
+        email
+        number
+        password
+        date
+        radio for radio buttons
+        checkbox
+        file for file picker -->
+
+        <header> 
+            <h1>Demo Form</h1>
+        </header>
+
+        <main>
+             <!-- Now to work on validation, this is to validate the inputs of a user
+            to ensure tahat only valid forms get sent to our server 
+        
+                the attribute required is used to ensure that during the process of filling the form
+            that field is not empty
+        
+            also  you can specify the minimum length of chatracters you want in a field
+        
+            you can also add what are called placeholders, in order to tell the user what kinda format you want your input-->
+            <form action="/" method="GET">
+
+                <section>
+                    <h2>Your personal details</h2>
+                    <ul>
+                        <li>
+                            <label for="username">Username</label>
+                            <input type="text" name="username" id="username" required placeholder="firstname lastname"/>
+                        </li>
+
+                        <li>
+                            <label for="useremail">Email Address</label>
+                            <input type="email" name="user-email" id="useremail" required>
+                        </li>
+
+                        <li>
+                            <label for="userpassword">Password</label>
+                            <input type="password" name="user-password" id="userpassword" required minlength="8">
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>More details</h2>
+                    <ul>
+                        <li>
+                            <label for="userage">Your Age</label>
+                            <input type="number" step="1" name="user-age" id="userage" required min="18" max="100">
+                        </li>
+
+                        <li>
+                            <label for="birthdate">Your birthdate</label>
+                            <input type="date" name="birth-date" id="birthdate" required min="1921-01-01" max="2003-01-01">
+                        </li>
+
+                        <li>
+                            <!-- now to work on the dropdown kind of input where we use the element called select -->
+                            <label for="favouritecolor">Favourite color</label>
+                            <select name="favourite-color" id="favouritecolor">
+                                <option value="blue">My Fav color is blue</option>
+                                <option value="green">My Fav color is green</option>
+                                <option value="black">My Fav color is black</option>
+                                <option value="red">My Fav color is red</option>
+                            </select>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <!-- now to work on the textarea tag which we can use to collect text of multiple lines -->
+                    <label for="usercomment">Your Comments</label>
+                    <textarea name="user-comment" id="usercomment" rows="8"></textarea>
+                </section>
+        
+                
+
+        
+
+                <section>
+                    <h2>How should we verify your account</h2>
+                    <!-- now to work with radio buttons and other types -->        
+                
+                    <!-- giving each radio button the same name, makes sure that the user picks only one option
+                    and this can be used to get or extract data on the server
+                    
+                    and also we have to specify the value that is being collected by the server
+                    so the value attribute helps us with that, the value attribute allows us to set a value for a particular input -->
+
+                    <ul>
+                        <li class="form-control">
+                            <input type="radio" name="verify" id="verify-phone" value="phone">
+                            <label for="verify-phone">Via a phone call</label>
+                        </li>
+
+                        <li class="form-control">
+                            <input type="radio" name="verify" id="verify-email" value="email">
+                            <label for="verify-email">Via an Email</label>
+                
+                        </li> 
+                        
+                    </ul>              
+                </section>
+
+                <section>
+                    <h2>How should we contact you</h2>
+                    <ul>
+                        <li class="form-control">
+                            <input type="checkbox" name="" id="contact-email" name="contact" value="email">
+                            <label for="contact-email">Contact me via Email</label>
+                        </li>
+                
+                        <li class="form-control">
+                            <input type="checkbox" name="" id="contact-phone" name="contact" value="phone">
+                            <label for="contact-phone">Contact me via phone</label>
+                        </li>
+                    </ul>
+                </section>
+
+                <hr>
+
+                <section>
+                    <div class="form-control"> 
+                        <input type="checkbox" name="" id="agree-terms" name="terms">
+                        <label for="agree-terms">Agree to terms?</label>
+                    </div>
+                </section>
+                
+                <!-- now to focus on a button that is created outside a form 
+                that does something else, by specifying its type
+                type = button will not submit the form
+                type = submit is going to submit the form
+                type = reset is going to reset the form to its cleared state -->
+                
+                <section>
+                    <button type="submit">Submit</button>
+                </section>                      
+            </form>
+
+        </main>
+</body>
+</html> 
