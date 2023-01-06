@@ -1,0 +1,107 @@
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-color: rgb(224, 232, 255);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;  
+    align-items: center;  
+}
+
+main{
+    background-color: hsl(225, 100%, 98%);
+    width: 28rem;
+    border-radius: 15px;
+    overflow: hidden;
+    padding-bottom: 1rem;
+
+}
+
+.hero-section{
+    margin-bottom: 3rem;
+}
+.order-section{
+    margin-top: 2rem; 
+    margin-left: 4rem;
+    text-align: center;
+    width: 20rem;
+}
+
+.order-section h1{ 
+    color: rgb(38, 42, 75);
+    font-family: 'Red Hat Display', sans-serif;
+}
+.order-section p{
+    line-height: 1.7rem; 
+    color: rgb(116, 150, 173);
+    font-size: 1.1rem;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.plan-section{ 
+    background-color: rgba(224, 232, 255, 0.466);
+    padding: 0 1rem;
+    margin: auto;
+    width: 22rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.plan-section a{ 
+    color: hsl(249, 73%, 51%);
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: bolder;
+}
+
+.annual{ 
+    margin-left: 1rem;
+}
+
+.annual h3{ 
+    font-size: 1rem;
+    color: rgb(38, 42, 75);
+    font-weight: bolder;
+    font-family: 'Red Hat Display', sans-serif;
+    margin-bottom: -0.5rem;
+}
+
+.annual p{ 
+    color: rgb(106, 132, 161);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.plan{ 
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+.payment-section a{
+    text-align: center; 
+    display: block;
+}
+
+.proceed{
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.295);
+    border-radius: 10px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: bold;
+    margin: 2rem auto;
+    width: 22rem; 
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    background-color: hsl(249, 72%, 47%);;
+}
+
+.cancel{
+    border-radius: 10px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: bold;
+    margin: 2rem auto;
+    color: rgb(123, 132, 175);
+    text-decoration: none;
+}
